@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    background-color: #F2E6F3;
+}
+
+.nav-link, .navbar-brand{
+    color: #5d2f9d;
+}
+
+
+.gradient-background{
+    background: linear-gradient(300deg, #49788C, #8470A0, #7FA6D8);
+    animation: gradient-animation 8s ease infinite;
+    height: 260px;
+}
+
+
+.aboutus-background{
+    background: linear-gradient(270deg, #49788C, #8470A0, #7FA6D8);
+    animation: gradient-animation 8s ease infinite;
+    height: auto;
+}
+
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.column1{
+    display: flex;
+    align-items: center;
+}
+
+.bg-navbar{
+    background-color: #F2E6F3;
+}
+
+
+.glammor-rubrik{
+    color:#7FA6D8;
+    text-align: left;
+    font-size: 9rem;
+    font-family: 'Playball', cursive;
+    margin-left: 20%;
+}
+
+.glammor-text{
+    color:#7FA6D8;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Playball', cursive;
+}
+
+#blombild{
+    width: 14rem;
+    height: 14rem;
+    margin-left: 5rem;
+    border-radius:50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .glammor-rubrik {
+        font-size: 4rem;
+        margin-left: 0; 
+        text-align: center;
+    }
+    .column1 {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    #blombild {
+        width: 7rem;
+        height: 7rem;   
+        margin-left: 0;
+    }
+}
+
+
+.card{
+    padding: 1rem;
+    margin:1rem;
+    background-color:#c9ddf5;
+}
+
+.card>img{
+    width: 10rem;
+    height: 11rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    color: #49788C; 
+    padding: 10px 0;
+}
+
+footer i {
+    margin-right: 10px; 
+}
